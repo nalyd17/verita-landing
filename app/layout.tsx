@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://www.drinkverita.com/verita-og.png",
-        width: 1012,
-        height: 687,
+        width: 1536,
+        height: 1024,
         alt: "Verita OG Image",
       },
     ],
