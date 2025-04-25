@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://www.drinkverita.com/verita-og.png",
-        width: 1200,
-        height: 800,
-        alt: "Proformation Digital OG Image",
+        width: 1012,
+        height: 687,
+        alt: "Verita OG Image",
       },
     ],
   },
