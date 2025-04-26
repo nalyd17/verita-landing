@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Cormorant_Garamond, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const inter = Inter({
+export const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-cormorant",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+export const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
 });
 
 export const metadata: Metadata = {
@@ -36,7 +42,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+      <body
+        className={`${cormorant.variable} ${playfair.variable} antialiased`}
+      >
         <Navbar />
         {children}
       </body>

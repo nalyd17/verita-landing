@@ -4,15 +4,27 @@
   --color-evergreen: #1D3B2A;
   --color-elixir: #D4AF37;
   --color-chamomile: #F2E7C9;
+  --color-mist: #F5F4EC;
+  --color-shaded: #1A2B22;
+  --color-parchment: #F3E2B8;
+
+  --font-cormorant: ['var(--font-cormorant)'];
+  --font-playfair: ['var(--font-playfair'];
 }
 
-html,
-body {
-  overscroll-behavior: none;
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: none;
   height: 100%;
+  background-color: var(--color-evergreen);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  font-family: var(--font-cormorant);
+  color: black;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  background-color: #F2E7C9;
-  color: black;
 }
