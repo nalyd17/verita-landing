@@ -17,7 +17,7 @@ html {
   scroll-behavior: smooth;
   overscroll-behavior-x: none;
   height: 100%;
-  background-color: var(--color-evergreen);
+  background-color: var(--color-shaded);
   scroll-behavior: smooth;
 }
 
