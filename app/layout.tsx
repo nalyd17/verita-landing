@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Verità | Zero-Proof Botanical Tincture for Mindful Drinkers",
   description:
     "Discover Verità — the modern ritual for the sober curious. Distilled with botanicals like juniper berry, black peppercorn, and citrus peel, Verità is a zero-proof tincture crafted in Charleston, SC for clarity, intention, and flavor. Just 1 drop in 4 oz tonic. Less than 0.5% ABV. Elevate your non-alcoholic experience at drinkverita.com.",
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Verità | Zero-Proof Botanical Tincture for Mindful Drinkers",
     description:
