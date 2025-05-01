@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-shaded border-b-elixir fixed top-0 right-0 left-0 z-50 border-b transition-all duration-300">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-center px-6 md:justify-between">
+    <nav className="bg-shaded border-b-elixir fixed top-0 right-0 left-0 z-50 border-b">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-center px-6 sm:justify-between">
         <Link href="/" className="flex items-center justify-center gap-2">
           <Image
             src="/verita-title-logo.png"
@@ -16,7 +16,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="hidden space-x-8 md:flex">
+        <div className="hidden space-x-8 sm:flex">
           <NavLink href="#about" label="About" />
           <NavLink href="#ingredients" label="Ingredients" />
           <NavLink href="#ritual" label="Ritual" />
