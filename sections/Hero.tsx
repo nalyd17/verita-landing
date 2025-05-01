@@ -3,12 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section
-      className="relative flex max-h-[1600px] min-h-screen items-center justify-center bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/verita-splash.jpg')",
-      }}
-    >
+    <section className="relative flex max-h-[1600px] min-h-screen items-center justify-center bg-[url('/verita-splash.jpg')] bg-cover bg-center">
       <div className="bg-evergreen/70 absolute inset-0" />
 
       <div className="text-chamomile relative z-10 mx-auto flex max-w-7xl flex-col items-center justify-center px-4 py-20 text-center sm:px-6 lg:px-8">
