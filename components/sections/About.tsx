@@ -18,6 +18,7 @@ export default function About() {
           </p>
 
           <p className="text-evergreen font-sans text-lg leading-relaxed">
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             Whether you're abstaining from alcohol or simply seeking a refined
             alternative, Verità offers the perfect balance of flavor and
             tradition. Our innovative approach honors the ritual of drinking

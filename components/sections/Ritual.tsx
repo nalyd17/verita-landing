@@ -55,6 +55,7 @@ export default function Ritual() {
         {/* Quote */}
         <div className="mt-16 text-center">
           <p className="font-cormorant text-evergreen text-xl italic">
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             "Crafted with the precision of science and the soul of tradition"
           </p>
         </div>
