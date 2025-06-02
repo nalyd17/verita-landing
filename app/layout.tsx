@@ -49,7 +49,9 @@ export default function RootLayout({
       <body
         className={`${cormorant.variable} ${playfair.variable} antialiased`}
       >
-        <Navbar />
+        <div className="hidden md:block">
+          <Navbar />
+        </div>
         {children}
         <Analytics />
       </body>

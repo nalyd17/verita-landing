@@ -23,16 +23,21 @@ export default function Hero() {
 
           <div className="bg-elixir mx-auto mb-4 h-1 w-24" />
 
-          <p className="text-lg md:text-xl">
-            A premium zero-proof gin tincture handcrafted from botanical
-            ingredients.
-          </p>
+          <div className="text-lg leading-relaxed md:text-xl">
+            <p className="text-xl font-semibold md:text-2xl">
+              A Botanical Ritual, Reinvented
+            </p>
+            <p>Inspired by the flavor traditions of gin.</p>
+            <p>Crafted as a concentrated botanical extract.</p>
+            <p>Designed for tonic, and beyond.</p>
+            <p>No alcohol. No compromises. Just complexity in every drop.</p>
+          </div>
 
           <Link
             href="#about"
             className="border-elixir font-cormorant text-chamomile hover:bg-elixir hover:text-evergreen mt-4 inline-block border-2 bg-transparent px-8 py-3 text-lg tracking-wide transition duration-300"
           >
-            Discover More
+            Mix, Mist, Awaken the spirit.
           </Link>
         </div>
       </div>

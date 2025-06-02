@@ -16,7 +16,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="hidden space-x-8 sm:flex">
+        <div className="flex space-x-8">
           <NavLink href="#about" label="About" />
           <NavLink href="#ingredients" label="Ingredients" />
           <NavLink href="#ritual" label="Ritual" />
