@@ -9,22 +9,34 @@ export default function About() {
 
           <div className="bg-elixir mx-auto mb-6 h-1 w-24" />
 
-          <p className="text-evergreen mb-8 font-sans text-lg leading-relaxed">
-            Verità is an exquisite zero-proof gin tincture that captures the
-            essence and complexity of traditional spirits without the alcohol
-            content. Handcrafted in small batches in Charleston, SC, our
-            tincture is designed to elevate your drinking experience with
-            sophisticated botanicals and meticulous attention to detail.
-          </p>
+          <div className="text-evergreen space-y-12 font-sans text-lg leading-relaxed">
+            <div>
+              <h3 className="font-cormorant text-evergreen mb-4 text-2xl font-semibold">
+                Verità Botanical Elixir
+              </h3>
+              <p>
+                Verità is not a gin alternative. It’s a bold botanical extract
+                inspired by the essential flavors of gin (juniper, citrus,
+                spice), handcrafted in small batches and made to awaken your
+                favorite mixers. Designed to be diluted. Whether stirred into
+                tonic, shaken into a spritz, or layered into a zero-proof
+                Negroni, Verità transforms your glass into something
+                extraordinary. Elegant. Adaptable. Zero proof.
+              </p>
+            </div>
 
-          <p className="text-evergreen font-sans text-lg leading-relaxed">
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            Whether you're abstaining from alcohol or simply seeking a refined
-            alternative, Verità offers the perfect balance of flavor and
-            tradition. Our innovative approach honors the ritual of drinking
-            while offering a new way to experience the pleasure of a perfectly
-            crafted beverage.
-          </p>
+            <div>
+              <h3 className="font-cormorant text-evergreen mb-4 text-2xl font-semibold">
+                Accento Aromatic Mist
+              </h3>
+              <p>
+                A finishing aromatic mist to elevate your ritual. Spritz over
+                your drink to release essential oils and awaken the senses.
+                Complements the Verità Botanical Elixir with a whisper of
+                freshness and spice.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
