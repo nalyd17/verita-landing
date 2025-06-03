@@ -17,9 +17,7 @@ export default function Navbar() {
         </Link>
 
         <div className="flex space-x-8">
-          <NavLink href="#about" label="About" />
-          <NavLink href="#ingredients" label="Ingredients" />
-          <NavLink href="#ritual" label="Ritual" />
+          <NavLink href="/faq" label="FAQ" />
         </div>
       </div>
     </nav>

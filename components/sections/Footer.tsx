@@ -19,48 +19,6 @@ export default function Footer() {
 
           <h3 className="text-elixir mb-6 font-serif text-2xl">VERITÀ</h3>
 
-          {/* <div className="mb-8 flex space-x-8">
-            <Link
-              href="#"
-              className="text-chamomile hover:text-elixir transition-colors"
-            >
-              <Instagram className="h-6 w-6" />
-            </Link>
-            <Link
-              href="#"
-              className="text-chamomile hover:text-elixir transition-colors"
-            >
-              <Facebook className="h-6 w-6" />
-            </Link>
-            <Link
-              href="#"
-              className="text-chamomile hover:text-elixir transition-colors"
-            >
-              <Twitter className="h-6 w-6" />
-            </Link>
-          </div> */}
-
-          <div className="mb-6 flex flex-wrap justify-center space-x-6 text-lg">
-            <Link
-              href="#about"
-              className="font-cormorant text-chamomile hover:text-elixir mb-2 transition-colors"
-            >
-              About
-            </Link>
-            <Link
-              href="#ingredients"
-              className="font-cormorant text-chamomile hover:text-elixir mb-2 transition-colors"
-            >
-              Ingredients
-            </Link>
-            <Link
-              href="#ritual"
-              className="font-cormorant text-chamomile hover:text-elixir mb-2 transition-colors"
-            >
-              Ritual
-            </Link>
-          </div>
-
           <div className="text-center">
             <p className="text-chamomile mb-1 font-sans text-sm opacity-70">
               Handcrafted in small batches by Verità Spirits in Charleston, SC.
