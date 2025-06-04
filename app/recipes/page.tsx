@@ -197,7 +197,7 @@ export default function RecipesPage() {
         </h2>
         <div className="bg-elixir mx-auto mb-10 h-1 w-24" />
         <p className="text-mist mb-6 text-lg leading-relaxed">
-          Verità plays well with others. Whether you're craving something
+          Verità plays well with others. Whether you’re craving something
           bitter, something bright, or something floral, this gin-inspired
           extract unlocks creative zero-proof cocktails at home or behind the
           bar.
@@ -208,7 +208,7 @@ export default function RecipesPage() {
           <li>A “dark and stormless” with ginger beer and lime</li>
         </ul>
         <p className="text-mist italic">
-          It's not just about gin. It's about what's possible.
+          It’s not just about gin. It’s about what’s possible.
         </p>
       </div>
 
