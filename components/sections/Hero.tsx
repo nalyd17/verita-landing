@@ -34,10 +34,10 @@ export default function Hero() {
           </div>
 
           <Link
-            href="#about"
+            href="/recipes"
             className="border-elixir font-cormorant text-chamomile hover:bg-elixir hover:text-evergreen mt-4 inline-block border-2 bg-transparent px-8 py-3 text-lg tracking-wide transition duration-300"
           >
-            Mix, Mist, Awaken the spirit.
+            Mix, Mist, Awaken the Spirit.
           </Link>
         </div>
       </div>
