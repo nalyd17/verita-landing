@@ -31,6 +31,7 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden space-x-8 md:flex">
+          <NavLink href="/recipes" label="Recipes" />
           <NavLink href="/faq" label="FAQ" />
         </div>
 
@@ -46,6 +47,11 @@ export default function Navbar() {
       {menuOpen && (
         <div className="px-6 pt-2 pb-4 md:hidden">
           <div className="flex flex-col space-y-4">
+            <NavLink
+              href="/recipes"
+              label="Recipes"
+              onClick={() => setMenuOpen(false)}
+            />
             <NavLink
               href="/faq"
               label="FAQ"
