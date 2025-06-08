@@ -1,3 +1,25 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Verità FAQ | Common Questions Answered",
+  description:
+    "Got questions? Explore answers about Verità’s ingredients, effects, usage, and more in our FAQ.",
+  openGraph: {
+    title: "Verità FAQ | Common Questions Answered",
+    description:
+      "Got questions? Explore answers about Verità’s ingredients, effects, usage, and more in our FAQ.",
+    url: "https://www.drinkverita.com/faq",
+    images: [
+      {
+        url: "https://www.drinkverita.com/verita-og.png",
+        width: 1536,
+        height: 1024,
+        alt: "Verita OG Image",
+      },
+    ],
+  },
+};
+
 export default function FAQPage() {
   const faqs = [
     {

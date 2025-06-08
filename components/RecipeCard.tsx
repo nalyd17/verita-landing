@@ -3,17 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Circle } from "lucide-react";
-
-export interface Recipe {
-  name: string;
-  ingredients: string[];
-  notes: string;
-  imageName: string;
-  instructions?: string;
-  mood?: string;
-  glass?: string;
-  garnish?: string;
-}
+import { Recipe } from "@/data/RecipeData";
 
 type RecipeCardProps = {
   recipe: Recipe;
