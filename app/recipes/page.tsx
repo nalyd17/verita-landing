@@ -1,17 +1,7 @@
 "use client";
 
-import { Circle } from "lucide-react";
 import { useState } from "react";
-
-interface Recipe {
-  name: string;
-  ingredients: string[];
-  notes: string;
-  instructions?: string;
-  mood?: string;
-  glass?: string;
-  garnish?: string;
-}
+import RecipeCard, { Recipe } from "@/components/RecipeCard";
 
 const atBarRecipes: Recipe[] = [
   {
@@ -27,6 +17,7 @@ const atBarRecipes: Recipe[] = [
     garnish: "Lemon wheel and a sprig of thyme",
     notes:
       "The fruit and florals of peach awaken Verità's citrus and cardamom notes. Lemon adds tension; thyme adds a savory snap.",
+    imageName: "Summerville Slip.png",
   },
   {
     name: "Herbalist's Highball",
@@ -42,6 +33,7 @@ const atBarRecipes: Recipe[] = [
     garnish: "Ribboned cucumber & cracked white pepper on top",
     notes:
       "Bright green and clean. Amplifies Verità's herbal backbone and lets the peppercorn shine in a refreshing, structured delivery.",
+    imageName: "Herbalists Highball.png",
   },
   {
     name: "Nocturne Bloom",
@@ -57,6 +49,7 @@ const atBarRecipes: Recipe[] = [
     garnish: "Edible flower or floating dried rose petals",
     notes:
       "Hibiscus and lavender pair beautifully with Verità's floral top notes. Ideal for slow sipping or social rituals.",
+    imageName: "Nocturne Bloom.png",
   },
   {
     name: "The Verità Negroni (Zero-Proof Edition)",
@@ -72,6 +65,7 @@ const atBarRecipes: Recipe[] = [
       "Stir all ingredients over ice. Strain into a rocks glass. Garnish with orange peel.",
     notes:
       "A bold, complex sipper that mirrors the Negroni's bitter charm. Verità's botanical spine holds its own against strong companions.",
+    imageName: "Verita Negroni.png",
   },
   {
     name: "Garden Smoke",
@@ -87,6 +81,7 @@ const atBarRecipes: Recipe[] = [
     garnish: "Smoked rosemary sprig (lightly charred at the tip)",
     notes:
       "A deep, smoky-acidic cocktail that leans umami. This is for your experimental drinker—surprising, grounded, unforgettable.",
+    imageName: "Garden Smoke.png",
   },
 ];
 
@@ -104,6 +99,7 @@ const atHomeRecipes: Recipe[] = [
     garnish: "Orange wheel or lemon twist",
     notes:
       "A bright, citrus-forward refresher that highlights Verità's orange peel and coriander without overcomplicating.",
+    imageName: "Citrus Spritz.png",
   },
   {
     name: "Pepper Mint Cooler",
@@ -117,6 +113,7 @@ const atHomeRecipes: Recipe[] = [
     garnish: "Fresh mint and cracked black pepper on top",
     notes:
       "Extremely easy to build. The mint water draws out Verità's peppermint; the black pepper hits the finish with energy.",
+    imageName: "Pepper Mint Cooler.png",
   },
   {
     name: "Verità Lemonade",
@@ -131,6 +128,7 @@ const atHomeRecipes: Recipe[] = [
     garnish: "Lemon wedge and basil leaf",
     notes:
       "Bright, refreshing, and approachable. The basil ties in beautifully with Verità's green herbals.",
+    imageName: "Verita Lemonade.png",
   },
   {
     name: "Ginger Grove",
@@ -144,6 +142,7 @@ const atHomeRecipes: Recipe[] = [
     garnish: "Lime wedge or crystallized ginger",
     notes:
       "A grown-up take on a mule. The pepper and cardamom in Verità deepen the spice beautifully.",
+    imageName: "Ginger Grove.png",
   },
   {
     name: "Verità Soda with a Twist",
@@ -159,6 +158,7 @@ const atHomeRecipes: Recipe[] = [
     garnish: "Lime wheel or cucumber slice",
     notes:
       "A simple, everyday serve that still feels refined. The dash of tart juice lifts the drink without overwhelming it.",
+    imageName: "Verita Soda with a Twist.png",
   },
   {
     name: "Cucumber Mist",
@@ -173,6 +173,7 @@ const atHomeRecipes: Recipe[] = [
       "Shake cucumber juice and Verità with ice. Strain into a glass over fresh ice, top with soda, mist with Accento.",
     notes:
       "A verdant, spa-like refresher that balances elegance with ease. Herbaceous, effervescent, and endlessly drinkable—this is Verità at its most revitalizing.",
+    imageName: "Cucumber Mist.png",
   },
   {
     name: "Stormless Mule",
@@ -182,6 +183,7 @@ const atHomeRecipes: Recipe[] = [
       "Add Verità to ginger beer in a copper mug over ice. Squeeze lime and mist with Accento.",
     notes:
       "Bright lime zest leads the nose, lifted by subtle hints of piney juniper and crushed coriander from the Verità. A faint herbal citrus note lingers underneath, reminiscent of lemon balm and soft peppercorn.",
+    imageName: "Stormless Mule.png",
   },
 ];
 
@@ -212,6 +214,7 @@ export default function RecipesPage() {
         </p>
       </div>
 
+      {/* Toggle */}
       <div className="border-elixir bg-mist/10 relative mx-auto mb-12 max-w-fit rounded-full border-2 px-1 py-1">
         <div className="flex space-x-1 text-sm font-medium">
           {["bar", "home"].map((key) => (
@@ -230,62 +233,10 @@ export default function RecipesPage() {
         </div>
       </div>
 
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
+      {/* Recipe Grid */}
+      <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8">
         {recipes.map((recipe, idx) => (
-          <div
-            key={idx}
-            className="border-elixir/30 bg-mist/5 rounded-lg border p-6 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg"
-          >
-            <div className="mb-2 flex items-start">
-              <Circle className="text-elixir mt-1 mr-2 h-5 w-5 flex-shrink-0" />
-              <div>
-                <h3 className="font-cormorant text-chamomile text-xl font-medium">
-                  {recipe.name}
-                </h3>
-                {recipe.mood && (
-                  <p className="text-chamomile mt-0.5 text-sm italic opacity-80">
-                    {recipe.mood}
-                  </p>
-                )}
-              </div>
-            </div>
-
-            {/* Spacer between title/mood and rest of card */}
-            <div className="mt-4 space-y-2 pl-7">
-              {recipe.glass && (
-                <p className="text-chamomile text-sm">
-                  <strong>Glass:</strong> {recipe.glass}
-                </p>
-              )}
-
-              <div>
-                <p className="text-chamomile text-sm font-semibold">
-                  Ingredients:
-                </p>
-                <ul className="text-chamomile list-disc pl-5 text-sm opacity-80">
-                  {recipe.ingredients.map((ing, i) => (
-                    <li key={i}>{ing}</li>
-                  ))}
-                </ul>
-              </div>
-
-              {recipe.garnish && (
-                <p className="text-chamomile text-sm">
-                  <strong>Garnish:</strong> {recipe.garnish}
-                </p>
-              )}
-
-              {recipe.instructions && (
-                <p className="text-chamomile text-sm">
-                  <strong>Instructions:</strong> {recipe.instructions}
-                </p>
-              )}
-
-              <p className="text-chamomile text-sm">
-                <strong>Notes:</strong> {recipe.notes}
-              </p>
-            </div>
-          </div>
+          <RecipeCard key={idx} recipe={recipe} imageName={recipe.imageName} />
         ))}
       </div>
     </section>
